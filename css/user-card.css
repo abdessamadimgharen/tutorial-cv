@@ -1,0 +1,162 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #0064ff;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.user-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 80%;
+    margin: 40px auto;
+}
+.user-card .container {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.user-card .container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 25px;
+}
+.user-card .container header .profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.user-card .container header .profil .photo {
+    width: 70px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+}
+.user-card .container header .profil .photo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.user-card .container header .profil .name h3 {
+    margin: 0 0 5px ;
+}
+.user-card .container header .profil .name div {
+    font-weight: 400;
+}
+.user-card .container header .social div:first-child {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.user-card .container header .social .icon i {
+    margin-right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.user-card .container section {
+    display: grid;
+    grid-template-columns: 12% 51% 35%;
+    gap: 1%;
+    padding: 40px 30px;
+}
+.user-card .container section article:first-child div {
+    margin-bottom: 45px;
+    color: #555;
+    font-weight: 600;
+    cursor: pointer;
+}
+.user-card .container section article:first-child div:last-child {
+    margin-bottom: 0;
+}
+.user-card .container section article:first-child div i {
+    padding-right: 5px;
+}
+.user-card .container section article:first-child div:hover  {
+    color: var(--main-color);
+    position: relative;
+}
+.user-card .container section article:first-child div:first-child {
+    color: var(--main-color);
+    position: relative;
+}
+.user-card .container section article:first-child div::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+.user-card .container section article:nth-child(2) .banner {
+    width: 100%;
+}
+.user-card .container section article:nth-child(2) .banner  img {
+    max-width: 100%;
+    height: 400px;
+}
+.user-card .container section article:last-child .info h4 {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.user-card .container section article:last-child .info hr {
+    width: 80px;
+    background-color: var(--main-color);
+    display: inline-block;
+    position: relative;
+}
+.user-card .container section article:last-child .info hr::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 6px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.user-card .container section article:last-child .info p {
+    color: #555;
+    line-height: 1.6;
+}
+.user-card .container section article:last-child .info .contact div {
+    margin-bottom: 15px;
+    color: #555;
+}
+.user-card .container section article:last-child .info .contact div span {
+    font-weight: 600;
+}
+.user-card .container section article:last-child .info .more-info {
+    display: flex;
+    align-items: center;
+}
+.user-card .container section article:last-child .info .more-info {
+    background-color: var(--main-color);
+    width: fit-content;
+    color: white;
+    margin-top: 30px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-card .container section article:last-child .info .more-info i {
+    font-size: 22px;
+}
+.user-card .container section article:last-child .info .more-info span {
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 600;
+}
